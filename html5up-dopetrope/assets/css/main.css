@@ -215,6 +215,34 @@ input, select, textarea {
 
 		}
 
+	.search-bar {
+		width: 1000px; /* Fixed width */
+		max-width: 100%; 
+		margin: 0 auto; /* in the center */
+		display: flex; /* 使输入框和按钮对齐 */
+		align-items: center;
+	}	
+
+	.search-bar input[type="text"] {
+		flex: 1; /* 输入框占据剩余空间 */
+		padding: 0.5em;
+		border: 1px solid #ccc;
+		border-radius: 5px 0 0 5px; /* 左侧圆角 */
+		outline: none;
+	}
+
+	.search-bar button {
+		padding: 0.5em 1em;
+		border: none;
+		background-color: #d52349;
+		color: white;
+		border-radius: 0 5px 5px 0; /* 右侧圆角 */
+		cursor: pointer;
+	}
+
+	.search-bar button:hover {
+		background-color: #7e0c23; /* 按钮悬停效果 */
+	}
 /* Row */
 
 	.row {
@@ -2173,14 +2201,14 @@ input, select, textarea {
 /* Banner */
 
 	#banner {
-		background: #CCE8F4 url("../../images/Whole.JPEG");
+		background: #ffffff url("../../images/Whole.JPEG");
 		background-position: center center;
-		background-size: auto 100%;
+		background-size: contain;
 		background-repeat: no-repeat;
 		text-align: center;
 		position: relative;
-		padding: 8em 0;
-		margin: 4em 0 0 0;
+		padding: 20em 0;
+		margin: 5em 0 0 0;
 	}
 
 		#banner header {
@@ -2869,7 +2897,7 @@ input, select, textarea {
 				#intro h2 {
 					font-size: 1.25em;
 				}
-
+/* 
 		/* Banner */
 
 			#banner {
@@ -2891,7 +2919,7 @@ input, select, textarea {
 
 					#banner header p {
 						font-size: 1.2em;
-					}
+					} */
 
 		/* Main */
 
@@ -2905,4 +2933,5 @@ input, select, textarea {
 				padding: 40px 0 20px 0;
 			}
 
+			/* 搜索栏样式 - 开始 */
 	}
