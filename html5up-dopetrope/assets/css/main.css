@@ -2003,7 +2003,7 @@ input, select, textarea {
 						background: #ea3723;
 					}
 
-/* Icons */
+Icons
 
 	.icon {
 		text-decoration: none;
@@ -2043,7 +2043,7 @@ input, select, textarea {
 		.icon.featured {
 			position: relative;
 			display: inline-block;
-			background-color: #388ffa;
+			background-color: #bb0e0e;
 			width: 9em;
 			padding: 1.75em 0 0.75em 0;
 			border-top-left-radius: 5px;
@@ -2063,25 +2063,25 @@ input, select, textarea {
 				position: absolute;
 				bottom: -1.95em;
 				left: 0;
-				border-top: solid 2em #388ffa;
+				border-top: solid 2em #bb0e0e;
 				border-left: solid 4.5em transparent;
 				border-right: solid 4.5em transparent;
 			}
 
 			.icon.featured.alt {
-				background-color: #388ffa;
+				background-color: #bb0e0e;
 			}
 
 				.icon.featured.alt:after {
-					border-top-color: #388ffa;
+					border-top-color: #bb0e0e;
 				}
 
 			.icon.featured.alt2 {
-				background-color: #388ffa;
+				background-color: #bb0e0e;
 			}
 
 				.icon.featured.alt2:after {
-					border-top-color: #388ffa;
+					border-top-color: #bb0e0e;
 				}
 
 /* Page Wrapper */
@@ -2096,7 +2096,7 @@ input, select, textarea {
 		position: relative;
 		background: #ffffff;
 		border-bottom: solid 1px #ccc;
-		padding: 5em 0 4em 0;
+		padding: 3em 0 2em 0;
 		text-align: center;
 	}
 
@@ -2208,7 +2208,7 @@ input, select, textarea {
 		text-align: center;
 		position: relative;
 		padding: 20em 0;
-		margin: 5em 0 0 0;
+		margin: 3em 0 0 0;
 	}
 
 		#banner header {
