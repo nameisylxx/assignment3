@@ -214,20 +214,41 @@ input, select, textarea {
 			}
 
 		}
+	
+	.header-container {
+		display: flex;
+		align-items: center; 
+		justify-content: flex-start;
+		gap: 1em;
+		width: 100%;
+		max-width: 1200px;
+		margin: 0 auto;
+		/* display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		gap: 1em;
+		padding: 15px; */
+	}
+
+	.header-container h1 {
+		margin: 0;
+		font-size: 2em; /* 根据需要调整字体大小 */
+		white-space: nowrap;
+	}
 
 	.search-bar {
-		width: 1000px; /* Fixed width */
-		max-width: 100%; 
-		margin: 0 auto; /* in the center */
-		display: flex; /* 使输入框和按钮对齐 */
+		width: 1000px; /* 根据需要调整搜索栏的宽度 */
+		/* flex: 1; 搜索栏占据剩余空间 */
+		/* margin: 0 auto; */
+		display: flex;
 		align-items: center;
-	}	
+	}
 
 	.search-bar input[type="text"] {
-		flex: 1; /* 输入框占据剩余空间 */
+		flex: 1;
 		padding: 0.5em;
 		border: 1px solid #ccc;
-		border-radius: 5px 0 0 5px; /* 左侧圆角 */
+		border-radius: 5px 0 0 5px;
 		outline: none;
 	}
 
@@ -236,13 +257,14 @@ input, select, textarea {
 		border: none;
 		background-color: #d52349;
 		color: white;
-		border-radius: 0 5px 5px 0; /* 右侧圆角 */
+		border-radius: 0 5px 5px 0;
 		cursor: pointer;
 	}
 
 	.search-bar button:hover {
-		background-color: #7e0c23; /* 按钮悬停效果 */
-	}
+		background-color: #b71c3a;
+}
+
 /* Row */
 
 	.row {
@@ -2199,6 +2221,48 @@ Icons
 			}
 
 /* Banner */
+	
+	.promo-banner {
+		background: #dce7f3;
+		padding: 8px 0;
+		border-bottom: 1px solid #b8d0e8;
+		/* padding: 8px 0;
+		border-bottom: 1px solid #b8d0e8;
+		position: relative;
+		z-index: 1000;
+		width: 100%;
+    	box-sizing: border-box; */
+	}
+	.promo-content {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 0 15px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		font-size: 18px;
+		color: #333;
+	}
+	.promo-left {
+		font-weight: 500;
+	}
+	
+	.promo-right {
+		font-weight: 400;
+	}
+
+	@media screen and (max-width: 736px) {
+		.promo-content {
+			flex-direction: column;
+			text-align: center;
+			padding: 15px;
+		}
+	}
+		
+		.promo-left, .promo-right {
+			margin: 5px 0;
+		}
+	
 
 	#banner {
 		background: #ffffff url("../../images/Whole.JPEG");
@@ -2933,5 +2997,42 @@ Icons
 				padding: 40px 0 20px 0;
 			}
 
-			/* 搜索栏样式 - 开始 */
+		.header-container {
+			display: flex;
+			align-items: center; /* 垂直居中对齐 */
+			justify-content: flex-start; /* 在两端对齐 */
+			gap: 1em; /* 标志和搜索栏之间的间距 */
+		}
+		
+		.header-container h1 {
+			margin: 0;
+			font-size: 2em; /* 根据需要调整字体大小 */
+		}
+		
+		.search-bar {
+			flex: 1; /* 搜索栏占据剩余空间 */
+			display: flex;
+			align-items: center;
+		}
+		
+		.search-bar input[type="text"] {
+			flex: 1;
+			padding: 0.5em;
+			border: 1px solid #ccc;
+			border-radius: 5px 0 0 5px;
+			outline: none;
+		}
+		
+		.search-bar button {
+			padding: 0.5em 1em;
+			border: none;
+			background-color: #d52349;
+			color: white;
+			border-radius: 0 5px 5px 0;
+			cursor: pointer;
+		}
+		
+		.search-bar button:hover {
+			background-color: #b71c3a;
+		}
 	}
